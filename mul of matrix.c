@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-int a[2][2]={1,2,3,4},b[2][2]={5,6,7,8},add[2][2],i,j,k,mul[2][2];
+int a[2][2]={1,2,3,4},b[2][2]={5,6,7,8},i,j,k,mul[2][2];
 	int length=sizeof(a)/sizeof(a[0]);
 	for(i=0;i<length;i++)
 	{

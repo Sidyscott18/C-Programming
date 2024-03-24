@@ -7,9 +7,7 @@ int main()
 	{
 		sum+=a[i];
 	}
-	n++;
-	total=((n*(n-1))/2);
-	missing=total-sum;
+	missing=((n*(n+1))/2)-sum;
 	printf("%d ",missing);
 	return 0;
 }

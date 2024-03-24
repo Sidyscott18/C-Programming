@@ -1,24 +1,19 @@
-#include <stdio.h>
+`#include <stdio.h> 
+int main() 
+{ 
+int  i; 
+int a[5] = { 1, 2, 3, 4, 5 }; 
+int b[5] = { 6, 7, 8, 9, 10 }; 
+int c[10]={0}; 
+for (i = 0; i < 5; i++)  
+{ 
 
-int main() {
-   int low=10, high=25, i, flag;
-   while (low < high) {
-      flag = 0;
-      if (low <= 1) {
-         low++;
-      }
-      for (i = 2; i <= low / 2; ++i) {
-
-         if (low % i == 0) {
-            flag = 1;
-         }
-      }
-
-      if (flag == 0)
-         printf("%d ", low);
-         low++;
-   }
-
-   return 0;
+c[i] = a[i]; 
+c[i+5]=b[i]; 
+}
+for (i = 0; i < 10; i++)  
+{ 
+printf("%d ", c[i]);
+} 
 }
 

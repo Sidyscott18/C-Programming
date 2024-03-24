@@ -3,7 +3,7 @@ int main()
 {
 int a[2][2]={30,40,50,60};
 int b[2][2]={20,70,80,90};
-int add[2][2]={0,0,0,0},i,j;
+int add[2][2],i,j;
 int length=sizeof(a)/sizeof(a[0]);
 for(i=0;i<length;i++)
 {

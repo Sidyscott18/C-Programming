@@ -9,6 +9,6 @@ int main()
 		mean1=(mean1+a[i]);
 	}
 	mean=(mean1/length);
-	printf("mean %d",mean);
+	printf("mean %d",length);
 	return 0;
 }
