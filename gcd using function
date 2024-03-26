@@ -1,0 +1,18 @@
+#include<stdio.h>
+int gcd(int n,int m)
+{
+  while(m!=0)
+  {
+    int temp=m;
+    m=n%m;
+    n=temp;
+  }
+  return n;
+}
+int main()
+{
+  int n=2,m=4;
+  int greatestgcd=gcd(n,m);
+  printf("gcd of two number is %d",greatestgcd);
+  return 0;
+}
