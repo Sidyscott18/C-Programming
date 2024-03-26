@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<math.h>
+
+int binaryToDecimal(int binary) {
+    int decimal = 0, base = 1, rem;
+    
+    while (binary > 0) {
+        rem = binary % 10;
+        decimal = decimal + rem * base;
+        binary = binary / 10;
+        base = base * 2;
+    }
+    
+    return decimal;
+}
+
+int main() {
+    int binaryNumber = 1111;
+    int decimalNumber = binaryToDecimal(binaryNumber);
+    
+    printf("Binary Number: %d\nDecimal Number: %d", binaryNumber, decimalNumber);
+    
+    return 0;
+}
